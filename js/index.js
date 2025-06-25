@@ -115,7 +115,7 @@ async function buildQuickTryUI() {
             var requestedApp = urlParams.get("app");
             if (requestedApp) {
                 // Filter the supported_apps that start with the app name
-                const filtered_apps = config.supported_apps.filter(app => app.startsWith(`${requestedApp}-`));
+                const filtered_apps = config.supported_apps.filter(app => app.startsWith(`${requestedApp}`));
 
                 if (filtered_apps.length > 0) {
                     config["supported_apps"] = filtered_apps;
